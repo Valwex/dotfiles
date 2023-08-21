@@ -1,0 +1,36 @@
+set incsearch
+set relativenumber
+set easymotion
+set highlightedyank
+set commentary
+set surround
+set exchange
+set multiple-cursors
+set NERDTree
+set ideajoin
+
+let mapleader = " "
+
+noremap <SPACE> <nop>
+
+let g:EasyMotion_override_acejump = 0
+
+map Q gq
+
+map <leader>e :NERDTreeToggle<CR>
+map <leader>g <Action>(Generate)
+map <leader>r <Action>(RenameElement)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+map <leader>s <Action>(Run)
+nmap <leader>h <Action>(PreviousTab)
+nmap <leader>l <Action>(NextTab)
+map <Leader> <Plug>(easymotion-prefix)
+
+" system clipboard
+vmap <leader>y "+y
+vmap <leader>d "+d
+nmap <leader>y "+yy
+nmap <leader>p "+p
+nmap <leader>P "+P
+vmap <leader>p "+p
+vmap <leader>P "+P
